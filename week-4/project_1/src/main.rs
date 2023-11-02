@@ -9,8 +9,8 @@ fn main() {
    let mut _result:f64;
 
    _result = (distance_1 * 1.61) / time_1;
-   println!("formula1: {}",_result);
+   println!("If a car goes 80 miles in 2hours: {}",_result);
 
    _result = (distance_2 * 1.61) / time_2;
-   println!("NeedsforSpeed: {}",_result);
+   println!("If a car goes 120 miles in 4 hours: {}",_result);
 }
