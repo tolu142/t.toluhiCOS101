@@ -11,20 +11,21 @@ fn main() {
     io::stdin().read_line(&mut input1).expect("Not a valid string");
     _worker = input1.trim().parse().expect("Not a valid number");
 
-    println!("Enter experience: ");
-    io::stdin().read_line(&mut input2).expect("Not a valid string");
-    _experience = input2.trim().parse().expect("Not a valid number");
-
+   
 	if _worker >= 40.0
 	{
-	    println!("Incentive is 1_560_000");
+	    println!("You are experienced and Incentive is 1_560_000");
     }
-    if _worker == 30.0
+    else if _worker == 30.0 && _worker <= 40.0
     {
-    	println!("Incentive is 1_480_000 ");
+    	println!("You are experienced and Incentive is 1_480_000 ");
     }
-    if _worker < 28.0
+    else if _worker < 28.0
     {
-    	println!("Incentive is 1_300_000");
+    	println!("You are experienced and Incentive is 1_300_000");
+    }
+    else
+    {
+    	println!("You are inexperienced and Incentive is 100_000");
     }
 }
